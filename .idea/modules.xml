@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Chatgram.iml" filepath="$PROJECT_DIR$/Chatgram.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libtd/libtd.iml" filepath="$PROJECT_DIR$/libtd/libtd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libtd2/libtd.iml" filepath="$PROJECT_DIR$/libtd2/libtd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libtd2/libtd2.iml" filepath="$PROJECT_DIR$/libtd2/libtd2.iml" />
     </modules>
   </component>
 </project>

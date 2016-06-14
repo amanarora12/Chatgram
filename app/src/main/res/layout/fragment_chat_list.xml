@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgound"
+    tools:context="com.aman.chatgram.ui.fragments.ChatListFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/no_chats"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <ListView
+            android:id="@+id/chats_list"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_new_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_pencil"/>
+</FrameLayout>

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Chatgram</string>
+    <string name="verify_phone_number">Verify Phone Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="verify">verify</string>
+    <string name="choose_country">Choose Country</string>
+    <string name="invalid_phone_no">Phone Number not valid.</string>
+    <string name="enter_verification_code">Enter Verification Code</string>
+    <string name="get_started">Get Started</string>
+    <string name="verification_code">Verification Code</string>
+    <string name="incorrect_code">Incorrect Code!</string>
+    <string name="blank_edt_error">Field cannot be left blank</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_chats">No Chats</string>
+    <string name="write_a_message">Write a message</string>
+
+    <string-array name="image_bg_colors">
+        <item>#7FCBD9</item>
+        <item>#70B2D8</item>
+        <item>#7BCB81</item>
+        <item>#E48283</item>
+        <item>#EEA781</item>
+        <item>#EF83AC</item>
+        <item>#E6C26C</item>
+    </string-array>
 </resources>

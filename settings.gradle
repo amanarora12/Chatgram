@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':libtd2', ':libtd'
