@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Aman\Chatgram\libtd\src\main\jniLibs"/><source path="C:\Users\Aman\Chatgram\libtd\src\main\libs"><file name="armeabi-v7a/libtdjni.so" path="C:\Users\Aman\Chatgram\libtd\src\main\libs\armeabi-v7a\libtdjni.so"/><file name="x86/libtdjni.so" path="C:\Users\Aman\Chatgram\libtd\src\main\libs\x86\libtdjni.so"/></source></dataSet><dataSet config="release"><source path="C:\Users\Aman\Chatgram\libtd\src\release\jniLibs"/></dataSet></merger>
