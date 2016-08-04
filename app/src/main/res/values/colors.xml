@@ -9,4 +9,5 @@
     <color name="colorTextWhite">#FFFFFF</color>
     <color name="colorError">#FF0000</color>
     <color name="colorBackgound">#F5F5F7</color>
+    <color name="colorChatBg">#f2f2ff</color>
 </resources>

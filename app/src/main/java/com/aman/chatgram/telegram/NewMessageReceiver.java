@@ -39,7 +39,7 @@ public class NewMessageReceiver {
         }
     }
 
-    public int setIDforNewMsg(Long chatId){
+    public int getIDforNewMsg(Long chatId){
         synchronized (messageMap){
             return LIMIT;
         }

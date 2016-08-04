@@ -1,6 +1,7 @@
 package com.aman.chatgram.ui.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
@@ -9,12 +10,15 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.aman.chatgram.Constants;
 import com.aman.chatgram.R;
 import com.aman.chatgram.model.Chat;
 import com.aman.chatgram.telegram.ChatsHelper;
 import com.aman.chatgram.telegram.TelegramClient;
+import com.aman.chatgram.ui.activities.MessagesActivity;
 import com.aman.chatgram.ui.adapters.ChatListAdapter;
 
 import org.drinkless.td.libcore.telegram.TdApi;
@@ -53,6 +57,16 @@ public class ChatListFragment extends Fragment implements TelegramClient.Telegra
         chatListView= (ListView) view.findViewById(R.id.chats_list);
         chatListAdapter=new ChatListAdapter(getActivity(),chats);
         chatListView.setAdapter(chatListAdapter);
+        chatListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(getActivity().getApplicationContext(), MessagesActivity.class);
+                Chat chat= (Chat) chatListAdapter.getItem(position);
+                intent.putExtra(Constants.EXTRA_CHAT_ID,chat.getChatId());
+                startActivity(intent);
+            }
+        });
+
         fabNewChat = (FloatingActionButton) view.findViewById(R.id.fab_new_chat);
         fabNewChat.setOnClickListener(new View.OnClickListener() {
             @Override
